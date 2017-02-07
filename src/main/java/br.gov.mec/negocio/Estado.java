@@ -1,6 +1,5 @@
 package br.gov.mec.negocio;
 
-import br.gov.mec.persistencia.framework.model.Entidade;
 import com.google.gson.annotations.Expose;
 
 import javax.persistence.Entity;
@@ -10,7 +9,7 @@ import javax.persistence.Id;
  * Created by andre on 07/02/17.
  */
 @Entity
-public class Estado implements Entidade{
+public class Estado{
 
     @Expose
     @Id
@@ -22,12 +21,10 @@ public class Estado implements Entidade{
     @Expose
     private String sigla;
 
-    @Override
     public long getId() {
         return id;
     }
 
-    @Override
     public void setId(long id) {
         this.id = id;
     }

@@ -1,8 +1,6 @@
 package br.gov.mec.negocio;
 
-import br.gov.mec.persistencia.framework.model.Entidade;
 import com.google.gson.annotations.Expose;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -11,7 +9,7 @@ import javax.persistence.ManyToOne;
  * Created by andre on 07/02/17.
  */
 @Entity
-public class Municipio implements Entidade{
+public class Municipio {
 
     @Expose
     @Id
@@ -24,12 +22,10 @@ public class Municipio implements Entidade{
     @ManyToOne
     private Estado estado;
 
-    @Override
     public long getId() {
         return id;
     }
 
-    @Override
     public void setId(long id) {
         this.id = id;
     }
@@ -50,3 +46,4 @@ public class Municipio implements Entidade{
         this.estado = estado;
     }
 }
+

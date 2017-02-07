@@ -1,7 +1,4 @@
 package br.gov.mec.negocio;
-
-
-import br.gov.mec.persistencia.framework.model.Entidade;
 import com.google.gson.annotations.Expose;
 
 import javax.persistence.*;
@@ -11,29 +8,63 @@ import javax.persistence.*;
  */
 @Entity
 @SequenceGenerator(name = "instituicao_seq", sequenceName = "insituicao_seq", initialValue = 1)
-public class Instituicao implements Entidade{
+public class Instituicao {
 
     @Expose
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "insituicao_seq")
     private long id;
+
     @Expose
-    private String nome;
+    private String escola;
+
+    @Expose
+    private Estado estado;
+
+    @Expose
+    private Municipio municipio;
+
+    @Expose
+    private StatusEscolar statusEscolar;
+
+    public StatusEscolar getStatusEscolar() {
+        return statusEscolar;
+    }
+
+    public void setStatusEscolar(StatusEscolar statusEscolar) {
+        this.statusEscolar = statusEscolar;
+    }
 
     public long getId() {
         return id;
     }
 
-    @Override
     public void setId(long id) {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getEscola() {
+        return escola;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setEscola(String escola) {
+        this.escola = escola;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    public Municipio getMunicipio() {
+        return municipio;
+    }
+
+    public void setMunicipio(Municipio municipio) {
+        this.municipio = municipio;
     }
 }
+
