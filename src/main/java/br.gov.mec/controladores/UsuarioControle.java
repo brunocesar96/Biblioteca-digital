@@ -1,7 +1,8 @@
-package configuracao;
+package controladores;
 
 /**
  * Created by brunocesar on 07/02/17.
  */
+
 public class UsuarioControle {
 }
