@@ -48,23 +48,24 @@ public class Usuario {
     private String senha;
 
     @Expose
-    private TipoEscolaridade tipoEscolaridade;
+    private Professor.TipoEscolaridade tipoEscolaridade;
 
-    @Expose StatusAluno statusAluno;
+    @Expose
+    StatusEscolar.StatusAluno statusAluno;
 
-    public StatusAluno getStatusAluno() {
+    public StatusEscolar.StatusAluno getStatusAluno() {
         return statusAluno;
     }
 
-    public void setStatusAluno(StatusAluno statusAluno) {
+    public void setStatusAluno(StatusEscolar.StatusAluno statusAluno) {
         this.statusAluno = statusAluno;
     }
 
-    public TipoEscolaridade getTipoEscolaridade() {
+    public Professor.TipoEscolaridade getTipoEscolaridade() {
         return tipoEscolaridade;
     }
 
-    public void setTipoEscolaridade(TipoEscolaridade tipoEscolaridade) {
+    public void setTipoEscolaridade(Professor.TipoEscolaridade tipoEscolaridade) {
         this.tipoEscolaridade = tipoEscolaridade;
     }
 

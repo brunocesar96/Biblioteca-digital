@@ -62,4 +62,12 @@ public class Professor {
     public void setEscola(Escola escola) {
         this.escola = escola;
     }
+
+    /**
+     * Created by andre on 07/02/17.
+     */
+    public static enum TipoEscolaridade {
+
+        FUNDAMENTAL, MEDIO, GRADUACAO, ESPECIALIZACAO, MESTRADO, DOUTORADO, POS_DOUTORADO;
+    }
 }

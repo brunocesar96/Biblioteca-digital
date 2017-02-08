@@ -23,4 +23,10 @@ public enum  StatusEscolar {
               return statusEscolar;
        }
 
+    /**
+     * Created by andre on 07/02/17.
+     */
+    public static enum StatusAluno {
+        ATIVO, INATIVO;
+    }
 }
