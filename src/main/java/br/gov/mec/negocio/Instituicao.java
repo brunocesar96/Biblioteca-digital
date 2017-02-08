@@ -1,14 +1,12 @@
-package negocio;
+package br.gov.mec.negocio;
 
 
+import br.gov.mec.persistencia.model.Entidade;
 import com.google.gson.annotations.Expose;
-import persistencia.model.Entidade;
 
 import javax.persistence.*;
 
-/**
- * Created by andre on 07/02/17.
- */
+
 @Entity
 @SequenceGenerator(name = "instituicao_seq", sequenceName = "insituicao_seq", initialValue = 1)
 public class Instituicao implements Entidade {

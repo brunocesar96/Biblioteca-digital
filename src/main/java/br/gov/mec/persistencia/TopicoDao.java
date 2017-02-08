@@ -1,4 +1,4 @@
-package persistencia;
+package br.gov.mec.persistencia;
 
 
 import negocio.Topico;

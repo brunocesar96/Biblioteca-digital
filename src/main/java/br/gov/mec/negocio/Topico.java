@@ -1,4 +1,4 @@
-package negocio;
+package br.gov.mec.negocio;
 
 import com.google.gson.annotations.Expose;
 import com.sun.istack.internal.NotNull;

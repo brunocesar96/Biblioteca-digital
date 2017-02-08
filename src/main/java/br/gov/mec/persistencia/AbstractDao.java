@@ -1,13 +1,12 @@
-package persistencia;
-
-import java.io.Serializable;
-
-import java.lang.reflect.ParameterizedType;
+package br.gov.mec.persistencia;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
 
 public abstract class AbstractDao<PK extends Serializable, T> {
 

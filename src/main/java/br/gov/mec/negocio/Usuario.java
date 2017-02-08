@@ -1,17 +1,11 @@
-package negocio;
+package br.gov.mec.negocio;
 
 import com.google.gson.annotations.Expose;
-import org.hibernate.annotations.BatchSize;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
-
-import static javax.swing.text.StyleConstants.Size;
-
-/**
- * Created by andre on 07/02/17.
- */
 
 @Entity
 @SequenceGenerator(name="arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
@@ -24,14 +18,14 @@ public class Usuario {
     private int Id;
 
     @Expose
-    @Size(min=3, max=200)
+    //@Size(min=3, max=200)
     @Column(name = "NOME", nullable = false)
     private String nome;
 
-    /*@Expose
-    @Size(min=3, max=7)
+    @Expose
+    //@Size(min=3, max=7)
     @Column(name = "SITUACAO", nullable = false)
-    private String situacao;*/
+    private String situacao;
 
     @Expose
     @Temporal(TemporalType.DATE)
@@ -50,12 +44,13 @@ public class Usuario {
     private String cpf;
 
     @Expose
-    @BatchSize(max=100)
+    //@BatchSize(max=100)
     @Column(name = "EMAIL", unique = true, nullable = false)
     private String email;
 
     @Expose
-    @Size(mim=6, max=15)
+    @NotNull
+   // @Size(mim=6, max=15)
     @Column(name = "SENHA", nullable = false)
     private String senha;
 
@@ -79,7 +74,7 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getSituacao() {
+     public String getSituacao() {
         return situacao;
     }
 
