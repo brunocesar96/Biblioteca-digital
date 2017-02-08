@@ -45,7 +45,7 @@ public class TopicoDaoImpl implements TopicoDao {
 
     @SuppressWarnings("unchecked")
     public List<Topico> getTopicos() {
-        return getCurrentSession().createQuery("SELECT FROM topico ORDER BY nome ").list();
+        return getCurrentSession().createQuery("SELECT* FROM topico ORDER BY nome ASC").list();
     }
 
 

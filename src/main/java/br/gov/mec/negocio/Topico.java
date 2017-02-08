@@ -7,6 +7,7 @@ import org.hibernate.annotations.BatchSize;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "topico")
@@ -14,7 +15,7 @@ public class Topico {
 
     @NotNull
     @Expose
-    @BatchSize(size = 25)
+    @Size(max = 25)
     @Id
     private String nome;
 

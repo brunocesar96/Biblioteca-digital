@@ -5,6 +5,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
@@ -18,12 +19,12 @@ public class Usuario {
     private int Id;
 
     @Expose
-    //@Size(min=3, max=200)
+    @Size(min=3, max=200)
     @Column(name = "NOME", nullable = false)
     private String nome;
 
     @Expose
-    //@Size(min=3, max=7)
+    @Size(min=3, max=7)
     @Column(name = "SITUACAO", nullable = false)
     private String situacao;
 
@@ -44,19 +45,19 @@ public class Usuario {
     private String cpf;
 
     @Expose
-    //@BatchSize(max=100)
+    @Size(max=100)
     @Column(name = "EMAIL", unique = true, nullable = false)
     private String email;
 
     @Expose
     @NotNull
-   // @Size(mim=6, max=15)
+    @Size(min=6, max=15)
     @Column(name = "SENHA", nullable = false)
     private String senha;
 
     @Expose
     @Column(name = "ESCOLARIDADE")
-    private String escolaridade;
+    private Escolaridade escolaridade;
 
     public int getId() {
         return Id;
@@ -122,11 +123,11 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public String getEscolaridade() {
+    public Escolaridade getEscolaridade() {
         return escolaridade;
     }
 
-    public void setEscolaridade(String escolaridade) {
+    public void setEscolaridade(Escolaridade escolaridade) {
         this.escolaridade = escolaridade;
     }
 }
