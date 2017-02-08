@@ -5,9 +5,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.persistence.*;
 
-/**
- * Created by andre on 07/02/17.
- */
+
 @Entity
 @SequenceGenerator(name = "arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
 @Inheritance(strategy = InheritanceType.JOINED)
