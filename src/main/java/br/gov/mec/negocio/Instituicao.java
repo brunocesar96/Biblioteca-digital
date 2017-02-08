@@ -1,7 +1,7 @@
 package br.gov.mec.negocio;
 
 
-import br.gov.mec.persistencia.model.Entidade;
+import br.gov.mec.persistencia.framework.model.Entidade;
 import com.google.gson.annotations.Expose;
 
 import javax.persistence.*;

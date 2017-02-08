@@ -5,6 +5,7 @@ import com.sun.istack.internal.NotNull;
 import org.hibernate.annotations.BatchSize;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +15,7 @@ public class Topico {
     @NotNull
     @Expose
     @BatchSize(size = 25)
+    @Id
     private String nome;
 
     @NotNull

@@ -1,7 +1,7 @@
 package br.gov.mec.persistencia;
 
 
-import negocio.Topico;
+import br.gov.mec.negocio.Topico;
 
 import java.util.List;
 

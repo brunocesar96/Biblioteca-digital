@@ -1,7 +1,7 @@
 package br.gov.mec.persistencia;
 
 
-import negocio.Topico;
+import br.gov.mec.negocio.Topico;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +45,7 @@ public class TopicoDaoImpl implements TopicoDao {
 
     @SuppressWarnings("unchecked")
     public List<Topico> getTopicos() {
-        return getCurrentSession().createQuery("from Topico").list();
+        return getCurrentSession().createQuery("SELECT FROM topico ORDER BY nome ").list();
     }
 
 

@@ -1,4 +1,4 @@
-package br.gov.mec.persistencia.model;
+package br.gov.mec.persistencia.framework.model;
 
 
 public interface Entidade {
