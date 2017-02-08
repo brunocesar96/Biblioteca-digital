@@ -23,11 +23,6 @@ public class Usuario {
     @Expose
     private String nome;
 
-    /*@Expose
-    @Size(min=3, max=7)
-    @Column(name = "SITUACAO", nullable = false)
-    private String situacao;*/
-
     @Expose
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "dd/MM/yyyy")
@@ -48,23 +43,23 @@ public class Usuario {
     private String senha;
 
     @Expose
-    private TipoEscolaridade tipoEscolaridade;
+    private Escolaridade tipoEscolaridade;
 
-    @Expose StatusAluno statusAluno;
+    @Expose StatusUsuario statusAluno;
 
-    public StatusAluno getStatusAluno() {
+    public StatusUsuario getStatusAluno() {
         return statusAluno;
     }
 
-    public void setStatusAluno(StatusAluno statusAluno) {
+    public void setStatusAluno(StatusUsuario statusAluno) {
         this.statusAluno = statusAluno;
     }
 
-    public TipoEscolaridade getTipoEscolaridade() {
+    public Escolaridade getTipoEscolaridade() {
         return tipoEscolaridade;
     }
 
-    public void setTipoEscolaridade(TipoEscolaridade tipoEscolaridade) {
+    public void setTipoEscolaridade(Escolaridade tipoEscolaridade) {
         this.tipoEscolaridade = tipoEscolaridade;
     }
 

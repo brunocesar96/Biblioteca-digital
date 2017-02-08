@@ -2,7 +2,6 @@ package br.gov.mec.negocio;
 
 import com.google.gson.annotations.Expose;
 import com.sun.istack.internal.NotNull;
-import org.hibernate.annotations.BatchSize;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -21,7 +20,7 @@ public class Topico {
 
     @NotNull
     @Expose
-    @BatchSize(size = 200)
+    @Size(max = 200)
     private String descricao;
 
 
