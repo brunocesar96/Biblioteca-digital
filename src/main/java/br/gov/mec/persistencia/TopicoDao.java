@@ -13,7 +13,5 @@ public interface TopicoDao {
     public Topico getTopico(String nome);
     public void deleteTopico(String nome);
     public List<Topico> getTopicos();
-
-
 }
 
