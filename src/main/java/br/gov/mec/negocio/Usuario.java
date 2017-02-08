@@ -11,63 +11,54 @@ import java.util.Date;
  */
 
 @Entity
-@SequenceGenerator(name="arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
+@SequenceGenerator(name = "arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
 @Table(name = "Usuario")
 public class Usuario {
 
     @Expose
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario_seq")
+    @Column(name = "Id")
     private int Id;
 
     @Expose
+    @Column(name = "Nome")
     private String nome;
 
-    /*@Expose
-    @Size(min=3, max=7)
-    @Column(name = "SITUACAO", nullable = false)
-    private String situacao;*/
+    @Expose
+    @Column(name = "Situacao")
+    private StatusAluno statusAluno;
 
     @Expose
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "dd/MM/yyyy")
+    @Column(name = "Data_Cadastro")
     private Date dataCadastro;
 
     @Expose
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "dd/MM/yyyy")
+    @Column(name = "Data_Nascimento")
     private Date dataNascimento;
 
     @Expose
+    @OneToOne(cascade = {CascadeType.REMOVE, CascadeType.PERSIST})
+    private Arquivo foto;
+
+    @Expose
+    @Column(name = "CPF")
     private String cpf;
 
     @Expose
+    @Column(name = "Email")
     private String email;
 
     @Expose
     private String senha;
 
     @Expose
-    private Professor.TipoEscolaridade tipoEscolaridade;
-
-    @Expose
-    StatusEscolar.StatusAluno statusAluno;
-
-    public StatusEscolar.StatusAluno getStatusAluno() {
-        return statusAluno;
-    }
-
-    public void setStatusAluno(StatusEscolar.StatusAluno statusAluno) {
-        this.statusAluno = statusAluno;
-    }
-
-    public Professor.TipoEscolaridade getTipoEscolaridade() {
-        return tipoEscolaridade;
-    }
-
-    public void setTipoEscolaridade(Professor.TipoEscolaridade tipoEscolaridade) {
-        this.tipoEscolaridade = tipoEscolaridade;
-    }
+    @Column(name = "Escolaridade")
+    private TipoEscolaridade tipoEscolaridade;
 
     public int getId() {
         return Id;
@@ -85,7 +76,15 @@ public class Usuario {
         this.nome = nome;
     }
 
-     public Date getDataCadastro() {
+    public StatusAluno getStatusAluno() {
+        return statusAluno;
+    }
+
+    public void setStatusAluno(StatusAluno statusAluno) {
+        this.statusAluno = statusAluno;
+    }
+
+    public Date getDataCadastro() {
         return dataCadastro;
     }
 
@@ -99,6 +98,14 @@ public class Usuario {
 
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public Arquivo getFoto() {
+        return foto;
+    }
+
+    public void setFoto(Arquivo foto) {
+        this.foto = foto;
     }
 
     public String getCpf() {
@@ -123,6 +130,14 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public TipoEscolaridade getTipoEscolaridade() {
+        return tipoEscolaridade;
+    }
+
+    public void setTipoEscolaridade(TipoEscolaridade tipoEscolaridade) {
+        this.tipoEscolaridade = tipoEscolaridade;
     }
 
 }

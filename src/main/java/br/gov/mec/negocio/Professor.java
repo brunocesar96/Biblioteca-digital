@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 public class Professor {
 
     @Expose
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "professor_seq")
     private int Id;
 

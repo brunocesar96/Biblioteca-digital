@@ -9,12 +9,12 @@ import javax.validation.constraints.Size;
  * Created by brunocesar on 08/02/17.
  */
 @Entity
-@SequenceGenerator(name="arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
+@SequenceGenerator(name = "arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
 @Table
 public class Escola {
 
     @Expose
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "escola_seq")
     private int inep;
 
@@ -24,19 +24,16 @@ public class Escola {
     private String nomeEscola;
 
     @Expose
-    @Column(name = "estado",nullable = false)
+    @Column(name = "estado", nullable = false)
     private String estado;
 
     @Expose
-    @Column(name = "municipio",nullable = false)
+    @Column(name = "municipio", nullable = false)
     private String municipio;
 
     @Expose
-    @Column(name = "situacao",nullable = false)
+    @Column(name = "situacao", nullable = false)
     private StatusEscolar situcao;
-
-
-
 
     public int getInep() {
         return inep;

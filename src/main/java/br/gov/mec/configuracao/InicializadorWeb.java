@@ -29,5 +29,4 @@ public class InicializadorWeb implements WebApplicationInitializer {
         servlet.addMapping("/");
         servlet.setLoadOnStartup(1);
     }
-
 }

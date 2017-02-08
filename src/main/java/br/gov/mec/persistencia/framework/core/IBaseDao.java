@@ -1,7 +1,6 @@
 package br.gov.mec.persistencia.framework.core;
 
 import br.gov.mec.persistencia.framework.command.IBusca;
-import br.gov.mec.persistencia.framework.model.Entidade;
 import br.gov.mec.persistencia.framework.util.Ordenacao;
 
 import java.util.Collection;
@@ -12,7 +11,7 @@ import java.util.Set;
 /**
  * Created by brunocesar on 08/02/17.
  */
-interface IBaseDao<T extends Entidade> {
+interface IBaseDao<T extends IBaseDao.Entidade> {
 
     void save(T obj);
 
@@ -90,4 +89,7 @@ interface IBaseDao<T extends Entidade> {
     T getComNamedQuery(String nomeQuery, Map<String, Object> params);
 
     List<T> getListaComNamedQuery(String nomeQuery, Map<String, Object> params);
+
+    class Entidade {
+    }
 }

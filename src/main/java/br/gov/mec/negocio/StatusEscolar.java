@@ -5,28 +5,8 @@ package br.gov.mec.negocio;
  */
 public enum  StatusEscolar {
 
-       ABANDONADO("Abandonado"),
-       EM_ANDAMENTO("Em andamento"),
-       FINALIZADO("Finalizado");
+       ABANDONADO, EM_ANDAMENTO, FINALIZADO;
 
-
-       private String statusEscolar;
-
-       StatusEscolar (String statusEscolar){
-
-              this.statusEscolar=statusEscolar;
-
-       }
-
-       public String getStatusEscolar(){
-
-              return statusEscolar;
-       }
-
-    /**
-     * Created by andre on 07/02/17.
-     */
-    public static enum StatusAluno {
-        ATIVO, INATIVO;
+    public class StatusAluno {
     }
 }
