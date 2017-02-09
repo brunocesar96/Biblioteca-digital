@@ -10,7 +10,10 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "topico")
-public class Topico {
+public class Topico implements Base{
+
+    @Id
+    private Long id;
 
     @NotNull
     @Expose
@@ -38,5 +41,15 @@ public class Topico {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    @Override
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @Override
+    public long getId() {
+        return this.id;
     }
 }

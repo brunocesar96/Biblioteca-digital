@@ -28,7 +28,7 @@ public class Topicos {
     public ModelAndView addTopico(@ModelAttribute Topico topico){
 
         ModelAndView modelAndView = new ModelAndView("home");
-        topicoDao.addTopico(topico);
+        topicoDao.add(topico);
 
         String message = "Topico cadastrado com sucesso!";
         modelAndView.addObject("message", message);
@@ -43,7 +43,7 @@ public class Topicos {
 
         ModelAndView modelAndView = new ModelAndView("home");
 
-        topicoDao.updateTopico(topico);
+        topicoDao.update(topico);
 
         String message = "Topico editado com sucesso!";
         modelAndView.addObject("message", message);
@@ -57,7 +57,7 @@ public class Topicos {
     public  ModelAndView deletarTopico(@PathVariable String nome){
 
         ModelAndView modelAndView = new ModelAndView("home");
-        topicoDao.deleteTopico(nome);
+        topicoDao.remove(nome);
         String message = "Topico deletado com sucesso!";
         modelAndView.addObject("message", message);
         return modelAndView;
