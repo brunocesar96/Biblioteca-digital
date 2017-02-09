@@ -13,10 +13,7 @@ import javax.validation.constraints.Size;
 public class Topico implements Base{
 
     @Id
-    private Long id;
-
-    @Id
-    private Long id;
+    private long id;
 
     @NotNull
     @Expose
@@ -29,20 +26,21 @@ public class Topico implements Base{
     @Size(max = 200)
     private String descricao;
 
-    public Long getId() {
+    @Override
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    @Override
+    public void setId(long id) {
         this.id = id;
     }
 
-
-    public String getTopico() {
+    public String getNome() {
         return nome;
     }
 
-    public void setTopico(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -52,15 +50,5 @@ public class Topico implements Base{
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    @Override
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    @Override
-    public long getId() {
-        return this.id;
     }
 }

@@ -15,13 +15,12 @@ import java.util.List;
  */
 @SuppressWarnings("unchecked")
 @Repository
-public abstract class GenericDaoImpl <T extends Base, I extends Number> implements GenericDao<T, Number>{
+public abstract class GenericDaoImpl <T extends Base> implements GenericDao <T>{
 
     @Autowired
     private SessionFactory sessionFactory;
 
     protected Class<? extends Base> daoType;
-    private java.io.Serializable key;
 
     public GenericDaoImpl(){
         Type t = (Type) getClass().getGenericSuperclass();
@@ -48,13 +47,13 @@ public abstract class GenericDaoImpl <T extends Base, I extends Number> implemen
 
     }
 
-    public void remove(T entity) {
-        currentSession().delete(entity);
+    public void remove(long id) {
+        currentSession().delete(currentSession().get(daoType, id));
 
     }
 
-    public Object find(Object Id) {
-        return (T) currentSession().get(daoType, key);
+    public T find(long id) {
+        return (T) currentSession().get(daoType, id);
     }
 
     public List getAll() {

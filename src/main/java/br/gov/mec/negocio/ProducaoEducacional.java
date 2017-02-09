@@ -1,56 +1,21 @@
 package br.gov.mec.negocio;
 
-import com.google.gson.annotations.Expose;
-import com.sun.istack.internal.NotNull;
-
-import javax.persistence.*;
 import java.util.ArrayList;
 
 /**
  * Created by brunocesar on 08/02/17.
  */
-@Entity
-@SequenceGenerator(name="arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
-@Table(name = "producaoEducacional")
-public class ProducaoEducacional {
+public class ProducaoEducacional implements Base {
 
-    @Expose
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "producaoEducacional_seq")
-    private Long id;
-
-    @Expose
-    @NotNull
+    private int id;
     private String nome;
-
-    @Expose
-    @NotNull
     private String descricao;
-
-    @Expose
     private ArrayList<String> palavrasChave;
-
-    @Expose
     private ArrayList<String> autores;
-
-    @Expose
-    @NotNull
     private Arquivo arq;
-
-    @Expose
     private String objetivo;
-
-    @Expose
     private Visibilisade visibilisade;
 
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
