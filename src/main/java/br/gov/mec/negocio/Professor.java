@@ -16,7 +16,7 @@ public class Professor {
     @Expose
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "professor_seq")
-    private int Id;
+    private Long Id;
 
     @Expose
     @Size(min=3, max=200)
@@ -31,11 +31,11 @@ public class Professor {
     @Column(name = "escola",nullable = false)
     private Escola escola;
 
-    public int getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         Id = id;
     }
 

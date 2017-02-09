@@ -7,11 +7,7 @@ import br.gov.mec.negocio.ProducaoEducacional;
  */
 public interface ProducaoEduDao extends GenericDAO<ProducaoEducacional,Integer> {
 
-    @Override
-    void salvar(ProducaoEducacional entidade);
 
-    @Override
-    void editar(ProducaoEducacional entidade, Integer integer);
 
 
 }

@@ -15,6 +15,9 @@ public class Topico implements Base{
     @Id
     private Long id;
 
+    @Id
+    private Long id;
+
     @NotNull
     @Expose
     @Size(max = 25)
@@ -25,6 +28,14 @@ public class Topico implements Base{
     @Expose
     @Size(max = 200)
     private String descricao;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 
     public String getTopico() {
