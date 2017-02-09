@@ -19,7 +19,7 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario_seq")
     @Column(name = "Id")
-    private int Id;
+    private long Id;
 
     @Expose
     @Column(name = "Nome")
@@ -60,7 +60,7 @@ public class Usuario {
     @Column(name = "Escolaridade")
     private TipoEscolaridade tipoEscolaridade;
 
-    public int getId() {
+    public long getId() {
         return Id;
     }
 

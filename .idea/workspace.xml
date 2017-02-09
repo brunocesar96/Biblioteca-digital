@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0731a3a-37fd-4493-96e2-d6952111b1aa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDaoImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/BaseDao.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Base.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/ABaseDao.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/controladores/Topicos.java" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/controladores/Topicos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Topico.java" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Topico.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDao.java" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDao.java" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDaoImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,63 +24,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-                <element signature="e#1405#1406#0" expanded="true" />
-                <marker date="1486576814000" expanded="false" signature="1437:1448" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="1456:1462" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="1491:1502" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="1514:1520" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="1558:1569" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="1586:1592" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="1633:1644" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="1663:1669" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="1726:1737" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="1768:1774" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="1809:1820" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="1840:1846" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="1898:1909" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="1942:1948" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="1985:1996" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2018:2024" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2080:2091" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2128:2134" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2164:2175" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2187:2193" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2232:2243" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2260:2266" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2294:2305" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2316:2322" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2358:2369" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2384:2390" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2420:2431" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2444:2450" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2490:2501" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2520:2526" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2556:2567" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2580:2586" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2626:2637" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2656:2662" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2713:2724" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2748:2754" ph=" }" />
-                <marker date="1486576814000" expanded="false" signature="2826:2837" ph=" { " />
-                <marker date="1486576814000" expanded="false" signature="2878:2884" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GenericDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,33 +36,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopicoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDao.java">
+      <file leaf-file-name="IBaseDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/IBaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="330">
+              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProducaoEduDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/ProducaoEduDao.java">
+      <file leaf-file-name="QueryBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/QueryBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProducaoEduDaoImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/ProducaoEduDaoImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="150">
+              <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClausulaWhere.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/ClausulaWhere.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,15 +96,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TopicoDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="135">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,18 +123,8 @@
       <file leaf-file-name="Base.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Topicos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/controladores/Topicos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -182,17 +133,27 @@
       <file leaf-file-name="GenericDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="173">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1506#1507#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1429#1430#0" expanded="true" />
+                <element signature="e#1457#1458#0" expanded="true" />
+                <element signature="e#1527#1528#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProducaoEduDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/ProducaoEduDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -269,14 +230,14 @@
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Instituicao.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Escola.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/AreaConhecimento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/controladores/Topicos.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Base.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Topico.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDaoImpl.java" />
       </list>
     </option>
@@ -418,6 +379,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="persistencia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Biblioteca-digital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Biblioteca-digital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistencia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Biblioteca-digital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Biblioteca-digital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistencia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1068,7 +1101,7 @@
       <workItem from="1485962320921" duration="3113000" />
       <workItem from="1486469971126" duration="164000" />
       <workItem from="1486470637374" duration="15365000" />
-      <workItem from="1486497431913" duration="20930000" />
+      <workItem from="1486497431913" duration="23508000" />
     </task>
     <task id="LOCAL-00001" summary="Classes de Negocio">
       <created>1486491894104</created>
@@ -1126,11 +1159,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486584445370</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Classes de Negocio - Classes Dao">
+      <created>1486642935238</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1486642935238</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39572000" />
+    <option name="totallyTimeSpent" value="42150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="727" y="23" width="1184" height="993" extended-state="0" />
@@ -1217,7 +1257,8 @@
     <MESSAGE value="Classes de Negocio - Inserindo novas classes" />
     <MESSAGE value="Classes de Negocio - Correcao de classes" />
     <MESSAGE value="Classes de Negocio - Criacao do DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classes de Negocio - Criacao do DAO" />
+    <MESSAGE value="Classes de Negocio - Classes Dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classes de Negocio - Classes Dao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1383,40 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/ClausulaWhere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#239#240#0" expanded="false" />
-            <element signature="e#298#299#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#794#795#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/QueryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-          <folding>
-            <element signature="e#511#512#0" expanded="false" />
-            <element signature="e#555#556#0" expanded="false" />
-            <element signature="e#2391#2392#0" expanded="false" />
-            <element signature="e#2443#2444#0" expanded="false" />
-            <element signature="e#2708#2709#0" expanded="false" />
-            <element signature="e#2750#2751#0" expanded="false" />
-            <element signature="e#2788#2789#0" expanded="false" />
-            <element signature="e#2834#2835#0" expanded="false" />
-            <element signature="e#3151#3152#0" expanded="false" />
-            <element signature="e#3198#3199#0" expanded="false" />
-            <element signature="e#3244#3245#0" expanded="false" />
-            <element signature="e#3280#3281#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/util/Ordenacao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1445,16 +1452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/IBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1602,56 +1599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
-            <marker date="1486576814000" expanded="false" signature="1437:1448" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="1456:1462" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="1491:1502" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="1514:1520" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="1558:1569" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="1586:1592" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="1633:1644" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="1663:1669" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="1726:1737" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="1768:1774" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="1809:1820" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="1840:1846" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="1898:1909" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="1942:1948" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="1985:1996" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2018:2024" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2080:2091" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2128:2134" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2164:2175" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2187:2193" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2232:2243" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2260:2266" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2294:2305" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2316:2322" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2358:2369" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2384:2390" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2420:2431" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2444:2450" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2490:2501" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2520:2526" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2556:2567" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2580:2586" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2626:2637" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2656:2662" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2713:2724" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2748:2754" ph=" }" />
-            <marker date="1486576814000" expanded="false" signature="2826:2837" ph=" { " />
-            <marker date="1486576814000" expanded="false" signature="2878:2884" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1670,35 +1617,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/ProducaoEduDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="75">
+          <caret line="5" column="64" lean-forward="true" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/controladores/Topicos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="578">
+          <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/IBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/QueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding>
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/framework/core/ClausulaWhere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1724,40 +1693,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/negocio/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="930">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/TopicoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/ProducaoEduDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/gov/mec/persistencia/GenericDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="173">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
           </folding>
         </state>
       </provider>

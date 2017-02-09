@@ -12,7 +12,7 @@ public interface GenericDao<T extends Base> {
     void add (T entity);
     void saveOrUpdate(T entity);
     void update(T entity);
-    void remove(T entity);
+    void remove(String entity);
     T find (long key);
     List<T> getAll();
 }
