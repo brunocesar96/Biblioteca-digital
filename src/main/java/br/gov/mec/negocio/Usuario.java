@@ -18,7 +18,7 @@ public class Usuario {
     @Expose
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario_seq")
-    private int Id;
+    private Long Id;
 
     @Expose
     private String nome;
@@ -63,11 +63,11 @@ public class Usuario {
         this.tipoEscolaridade = tipoEscolaridade;
     }
 
-    public int getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         Id = id;
     }
 

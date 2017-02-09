@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by brunocesar on 08/02/17.
+ * Created by brunocesar on 09/02/17.
  */
 interface GenericDAO<T, ID extends Serializable> {
 

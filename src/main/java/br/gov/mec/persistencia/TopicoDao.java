@@ -2,18 +2,22 @@ package br.gov.mec.persistencia;
 
 
 import br.gov.mec.negocio.Topico;
+import com.sun.xml.internal.bind.v2.model.core.ID;
 
 import java.util.List;
 
+public interface TopicoDao extends GenericDAO<Topico,Long> {
 
-public interface TopicoDao {
+    Topico buscarPeloCodigo(Long ID);
 
-    public void addTopico(Topico topico);
-    public void updateTopico(Topico topico);
-    public Topico getTopico(String nome);
-    public void deleteTopico(String nome);
-    public List<Topico> getTopicos();
+    void salvar(Topico entidade);
 
+    public List<Topico> listar();
 
+    void editar(Topico entidade, ID id);
+
+    void excluir(Topico entidade);
+
+    void excluir(Long chave);
 }
 

@@ -12,6 +12,9 @@ import javax.validation.constraints.Size;
 @Table(name = "topico")
 public class Topico {
 
+    @Id
+    private Long id;
+
     @NotNull
     @Expose
     @Size(max = 25)
@@ -22,6 +25,14 @@ public class Topico {
     @Expose
     @Size(max = 200)
     private String descricao;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 
     public String getTopico() {

@@ -28,7 +28,7 @@ public class Topicos {
     public ModelAndView addTopico(@ModelAttribute Topico topico){
 
         ModelAndView modelAndView = new ModelAndView("home");
-        topicoDao.addTopico(topico);
+        topicoDao.salvar(topico);
 
         String message = "Topico cadastrado com sucesso!";
         modelAndView.addObject("message", message);
@@ -39,11 +39,11 @@ public class Topicos {
 
     //Alterar Topico de acordo com a chave primaria (Nome do Tópico)
     @RequestMapping(value = "/alterarTopico" ,method = RequestMethod.POST)
-    public ModelAndView editarTopico(@ModelAttribute Topico topico , @PathVariable String nome){
+    public ModelAndView editarTopico(@ModelAttribute Topico topico , @PathVariable Long id){
 
         ModelAndView modelAndView = new ModelAndView("home");
 
-        topicoDao.updateTopico(topico);
+        topicoDao.editar(topico,id);
 
         String message = "Topico editado com sucesso!";
         modelAndView.addObject("message", message);
@@ -54,10 +54,10 @@ public class Topicos {
 
     //Deletar Topico de acordo com a chave primaria (Nome do Tópico)
     @RequestMapping(value = "/deletarTopico" ,method = RequestMethod.GET)
-    public  ModelAndView deletarTopico(@PathVariable String nome){
+    public  ModelAndView deletarTopico(@PathVariable Long id){
 
         ModelAndView modelAndView = new ModelAndView("home");
-        topicoDao.deleteTopico(nome);
+        topicoDao.excluir(id);
         String message = "Topico deletado com sucesso!";
         modelAndView.addObject("message", message);
         return modelAndView;
@@ -69,7 +69,7 @@ public class Topicos {
     public ModelAndView listarTopicos(){
         ModelAndView modelAndView = new ModelAndView("listaTopicos");
 
-        List<Topico> topicos = topicoDao.getTopicos();
+        List<Topico> topicos = topicoDao.listar();
         modelAndView.addObject("topicos", topicos);
 
         return modelAndView;
