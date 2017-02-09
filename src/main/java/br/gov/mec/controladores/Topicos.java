@@ -7,8 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
-
 /**
  * Created by brunocesar on 08/02/17.
  */
@@ -18,7 +16,7 @@ import java.util.List;
 
 @RestController
 @Controller
-@RequestMapping(value = "/professor/topicos")
+@RequestMapping(value = "usuario/professor/topicos")
 public class Topicos {
 
     @Autowired
@@ -69,8 +67,8 @@ public class Topicos {
     public ModelAndView listarTopicos(){
         ModelAndView modelAndView = new ModelAndView("listaTopicos");
 
-        List<Topico> topicos = topicoDao.getTopico();
-        modelAndView.addObject("topicos", topicos);
+        /*List<Topico> topicos = topicoDao.getTopico();
+        modelAndView.addObject("topicos", topicos);*/
 
         return modelAndView;
 

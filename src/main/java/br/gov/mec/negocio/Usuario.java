@@ -13,7 +13,7 @@ import java.util.Date;
 @Entity
 @SequenceGenerator(name = "arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
 @Table(name = "Usuario")
-public class Usuario {
+public class Usuario implements Base{
 
     @Expose
     @Id
@@ -60,13 +60,15 @@ public class Usuario {
     @Column(name = "Escolaridade")
     private TipoEscolaridade tipoEscolaridade;
 
+    @Override
+    public void setId(long id) {
+        this.Id = id;
+    }
+
     public long getId() {
         return Id;
     }
 
-    public void setId(int id) {
-        Id = id;
-    }
 
     public String getNome() {
         return nome;
