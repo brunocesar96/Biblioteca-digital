@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 /**
  * Created by brunocesar on 08/02/17.
@@ -14,7 +15,7 @@ import javax.validation.constraints.Size;
 public class Professor {
 
     @Expose
-    @Id
+    @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "professor_seq")
     private Long Id;
 
@@ -30,6 +31,10 @@ public class Professor {
     @Expose
     @Column(name = "escola",nullable = false)
     private Escola escola;
+
+    @Expose
+    @Column(name = "topicos")
+    private List<Topico>listaTopicos;
 
     public Long getId() {
         return Id;
@@ -63,11 +68,11 @@ public class Professor {
         this.escola = escola;
     }
 
-    /**
-     * Created by andre on 07/02/17.
-     */
-    public static enum TipoEscolaridade {
+    public List<Topico> getListaTopicos() {
+        return listaTopicos;
+    }
 
-        FUNDAMENTAL, MEDIO, GRADUACAO, ESPECIALIZACAO, MESTRADO, DOUTORADO, POS_DOUTORADO;
+    public void setListaTopicos(List<Topico> listaTopicos) {
+        this.listaTopicos = listaTopicos;
     }
 }
