@@ -69,7 +69,7 @@ public class Topicos {
     public ModelAndView listarTopicos(){
         ModelAndView modelAndView = new ModelAndView("listaTopicos");
 
-        List<Topico> topicos = topicoDao.getTopicos();
+        List<Topico> topicos = topicoDao.getTopico();
         modelAndView.addObject("topicos", topicos);
 
         return modelAndView;

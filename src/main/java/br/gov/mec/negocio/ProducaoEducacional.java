@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by brunocesar on 08/02/17.
  */
-public class ProducaoEducacional implements Base {
+public class ProducaoEducacional implements Base{
 
     private int id;
     private String nome;
@@ -71,5 +71,15 @@ public class ProducaoEducacional implements Base {
 
     public void setVisibilisade(Visibilisade visibilisade) {
         this.visibilisade = visibilisade;
+    }
+
+    @Override
+    public void setId(long id) {
+
+    }
+
+    @Override
+    public long getId() {
+        return 0;
     }
 }
