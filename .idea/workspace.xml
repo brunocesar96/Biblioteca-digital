@@ -942,7 +942,7 @@
       <workItem from="1486469971126" duration="164000" />
       <workItem from="1486470637374" duration="15365000" />
       <workItem from="1486497431913" duration="26568000" />
-      <workItem from="1486651406308" duration="9489000" />
+      <workItem from="1486651406308" duration="9496000" />
     </task>
     <task id="LOCAL-00001" summary="Classes de Negocio">
       <created>1486491894104</created>
@@ -1042,11 +1042,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486660434947</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Classes de Negocio - Classes Dao">
+      <created>1486660935621</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1486660935621</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54699000" />
+    <option name="totallyTimeSpent" value="54706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="712" y="39" width="1184" height="993" extended-state="0" />
