@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by andre on 08/02/17.
  */
-public interface GenericDao<T extends Base> {
+public interface GenericDao<T extends Base, I extends Number> {
 
     void add (T entity);
     void saveOrUpdate(T entity);

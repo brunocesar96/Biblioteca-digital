@@ -15,7 +15,7 @@ import java.util.List;
  */
 @SuppressWarnings("unchecked")
 @Repository
-public abstract class GenericDaoImpl <T extends Base, I extends Number> implements GenericDao<T>{
+public abstract class GenericDaoImpl <T extends Base, I extends Number> implements GenericDao<T, Number>{
 
     @Autowired
     private SessionFactory sessionFactory;
