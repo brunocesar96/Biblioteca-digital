@@ -7,16 +7,9 @@ import java.util.List;
 /**
  * Created by brunocesar on 08/02/17.
  */
-public class ProducaoEducacionalDaoImp extends GenericDaoImpl <ProducaoEducacional> implements ProducaoEducacional {
+public abstract class ProducaoEducacionalDaoImp extends GenericDaoImpl <ProducaoEducacional> implements ProducaoEducacionalDao {
 
-
-    @Override
-    public void setId(long id) {
-
-    }
-
-    @Override
-    public long getId() {
-        return 0;
+    public ProducaoEducacional getProducaoEducacional(String nome){
+        return null;
     }
 }
