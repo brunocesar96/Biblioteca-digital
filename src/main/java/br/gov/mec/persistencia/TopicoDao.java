@@ -3,10 +3,11 @@ package br.gov.mec.persistencia;
 
 import br.gov.mec.negocio.Topico;
 
+import java.util.List;
+
 public interface TopicoDao extends GenericDao<Topico> {
 
-    public Topico getTopico(String nome);
+    public List<Topico> listarTopicos();
 
 
 }
-

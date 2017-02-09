@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 /**
  * Created by brunocesar on 08/02/17.
  */
@@ -52,10 +54,10 @@ public class Topicos {
 
     //Deletar Topico de acordo com a chave primaria (Nome do Tópico)
     @RequestMapping(value = "/deletarTopico" ,method = RequestMethod.GET)
-    public  ModelAndView deletarTopico(@PathVariable String nome){
+    public  ModelAndView deletarTopico(@PathVariable long id){
 
         ModelAndView modelAndView = new ModelAndView("home");
-        topicoDao.remove(nome);
+        topicoDao.remove(id);
         String message = "Topico deletado com sucesso!";
         modelAndView.addObject("message", message);
         return modelAndView;
@@ -69,6 +71,8 @@ public class Topicos {
 
         /*List<Topico> topicos = topicoDao.getTopico();
         modelAndView.addObject("topicos", topicos);*/
+        List<Topico> topicos = topicoDao.listarTopicos();
+        modelAndView.addObject("topicos", topicos);
 
         return modelAndView;
 

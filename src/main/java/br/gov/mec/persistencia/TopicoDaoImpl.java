@@ -5,17 +5,16 @@ import br.gov.mec.negocio.Topico;
 import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 
 @Repository()
 public abstract class TopicoDaoImpl extends GenericDaoImpl <Topico, Integer> implements TopicoDao{
 
+    public List<Topico> listarTopicos(){
 
-    @Override
-    public Topico getTopico(String nome) {
-        Query query = currentSession().createQuery(
-                String.format("from Topico  where nome=:nome")
-        );
-        query.setParameter("nome", nome);
-        return (Topico) query.uniqueResult();
+        return  currentSession().createQuery(String.format("From Topico Order by nome Asc")).list();
+
     }
+
 }
