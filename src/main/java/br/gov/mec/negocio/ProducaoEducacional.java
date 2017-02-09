@@ -1,19 +1,52 @@
 package br.gov.mec.negocio;
 
+import com.google.gson.annotations.Expose;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by brunocesar on 08/02/17.
  */
+@Entity
+@SequenceGenerator(name = "arquivo_seq", sequenceName = "arquivo_seq", initialValue = 1)
+@Table(name = "producaoEducacional")
 public class ProducaoEducacional implements Base {
 
-    private int id;
+    @Expose
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "producaoEducacional_seq")
+    @Column(name = "Id")
+    private long Id;
+
+    @Expose
+    @Column(name = "Nome")
     private String nome;
+
+    @Expose
+    @Column(name = "descricao")
     private String descricao;
+
+    @Expose
+    @Column(name = "palavrasChave")
     private ArrayList<String> palavrasChave;
+
+    @Expose
+    @Column(name = "autores")
     private ArrayList<String> autores;
-    private Arquivo arq;
+
+    @Expose
+    @Column(name = "arquivo")
+    private Arquivo arquivo;
+
+    @Expose
+    @Column(name = "objetivo")
     private String objetivo;
+
+    @Expose
+    @Column(name = "visibilidade")
     private Visibilisade visibilisade;
 
 
@@ -50,11 +83,11 @@ public class ProducaoEducacional implements Base {
     }
 
     public Arquivo getArq() {
-        return arq;
+        return arquivo;
     }
 
     public void setArq(Arquivo arq) {
-        this.arq = arq;
+        this.arquivo = arq;
     }
 
     public String getObjetivo() {
@@ -72,4 +105,15 @@ public class ProducaoEducacional implements Base {
     public void setVisibilisade(Visibilisade visibilisade) {
         this.visibilisade = visibilisade;
     }
+
+    @Override
+    public void setId(long id) {
+
+    }
+
+    @Override
+    public long getId() {
+        return 0;
+    }
 }
+
